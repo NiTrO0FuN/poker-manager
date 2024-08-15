@@ -1,0 +1,73 @@
+{
+  "menu": {
+    "create_layout": {
+      "title": "Create a new layout",
+      "info": "Create a new table layout to use now or later"
+    },
+    "load_layout": {
+      "title": "Load existing layout",
+      "info": "Choose an already existing layout"
+    },
+    "quick_launch": {
+      "title": "Quick launch",
+      "info": "Load last layout used"
+    }
+  },
+  "create_layout": {
+    "info": "Choose the table shape you would like to use",
+    "name": "Table name",
+    "save": "Create table",
+    "data_corrupted": {
+      "summary": "Save corrupted",
+      "detail": "The saved data is corrupted. Erasing to save new table ..."
+    },
+    "error_saving": {
+      "summary": "Error while saving",
+      "detail": "An unexpected error happened while saving!"
+    },
+    "success_saving": {
+      "summary": "Saving complete!",
+      "detail": "The new table was saved successfully."
+    },
+    "rectangle": {
+      "title": "Rectangular table",
+      "info": "Choose this layout if you want to use a square or rectangular table",
+      "size": "Size of the table:"
+    },
+    "circle": {
+      "title": "Circular table",
+      "info": "Choose this layout if you want to use a circular table",
+      "size": "Maximum number of players:"
+    }
+  },
+  "load_layout": {
+    "empty": "No table found",
+    "load": "Start game",
+    "data_corrupted": {
+      "summary": "Loading failed",
+      "detail": "Try creating a new table to remove the corrupted save."
+    }
+  },
+  "delete_layout": {
+    "message": "Do you want to delete the table named {name}?"
+  },
+  "game": {
+    "error_loading": {
+      "summary": "Error loading the table",
+      "detail": "The table was not found in the storage."
+    },
+    "select_players": "Select active players",
+    "select_dealer": "Select the dealer",
+    "select_blind": "Choose the small blind",
+    "insert_bet": "Insert player betting amount",
+    "ended": "Game ended",
+    "bet_amount": "Bet amount",
+    "amount_to_call": "Need {amount} to call",
+    "actual_pot": "Pot: {amount}",
+    "check": "Check",
+    "fold": "Fold"
+  },
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "next": "Next"
+}

@@ -1,0 +1,45 @@
+@import "/node_modules/primeflex/primeflex.css";
+@import "./flags.css";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(50, 50, 50);
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: bisque;
+  }
+}
+
+body {
+  background-image: url("../assets/card_background_dark.png");
+  background-repeat: repeat;
+}
+
+/* Poker related */
+.poker-table {
+  background-color: darkgreen;
+  background-image: url("../assets/table.png");
+  background-size: cover;
+  border: solid sienna 5px;
+
+  box-shadow: 5px 5px 30px 5px black;
+
+  .info {
+    width: 70%;
+    color: sienna;
+    font-weight: bold;
+    font-size: calc(1rem + 0.5vw);
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+  }
+}
