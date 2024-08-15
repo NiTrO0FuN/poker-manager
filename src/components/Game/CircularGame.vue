@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
 import { Game } from "../../classes/Game";
 import Seat from "./Seat.vue";
-const { t } = useI18n();
 
 const { game } = defineProps<{
   game: Game;

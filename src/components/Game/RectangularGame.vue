@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
 import { Game } from "../../classes/Game";
 import Seat from "./Seat.vue";
-const { t } = useI18n();
 
 const { game } = defineProps<{
   game: Game;
@@ -18,8 +16,7 @@ const { game } = defineProps<{
       }${
         game.layout.size.x == game.layout.size.y
           ? 'vmin'
-          : Math.max(game.layout.size.x, game.layout.size.y) ==
-            game.layout.size.x
+          : Math.max(game.layout.size.x, game.layout.size.y) == game.layout.size.x
           ? 'vw'
           : 'vh'
       })`,
@@ -28,8 +25,7 @@ const { game } = defineProps<{
       }${
         game.layout.size.x == game.layout.size.y
           ? 'vmin'
-          : Math.max(game.layout.size.x, game.layout.size.y) ==
-            game.layout.size.x
+          : Math.max(game.layout.size.x, game.layout.size.y) == game.layout.size.x
           ? 'vw'
           : 'vh'
       })`,

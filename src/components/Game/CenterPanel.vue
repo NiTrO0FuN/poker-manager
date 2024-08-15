@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import { Game, GameStep } from "../../classes/Game";
-import { RefSymbol } from "@vue/reactivity";
 const { t } = useI18n();
 
 const { game } = defineProps<{
