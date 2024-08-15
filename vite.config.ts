@@ -11,5 +11,5 @@ export default defineConfig({
       resolvers: [PrimeVueResolver()],
     }),
   ],
-  // base: "/poker-manager/",
+  base: "/poker-manager/",
 });
