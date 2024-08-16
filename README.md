@@ -9,6 +9,11 @@ Automatically deployed on: https://nitro0fun.github.io/poker-manager/
 
 [![Build status](https://img.shields.io/github/actions/workflow/status/NiTrO0FuN/poker-manager/build.yml)](https://github.com/NiTrO0FuN/poker-manager/actions/workflows/build.yml)
 
+## Add or update translations
+Feel free to add a translation for any unsupported language!
+> [!TIP]
+> Please see https://github.com/NiTrO0FuN/poker-manager/pull/1 as a pull request example.
+
 ## Run Locally
 
 Clone the project
