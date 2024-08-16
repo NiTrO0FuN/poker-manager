@@ -1,0 +1,73 @@
+{
+  "menu": {
+    "create_layout": {
+      "title": "Créer une nouvelle table",
+      "info": "Créer une nouvelle table à utiliser maintenant ou plus tard"
+    },
+    "load_layout": {
+      "title": "Charger une table existante",
+      "info": "Charger une table créée précédemment"
+    },
+    "quick_launch": {
+      "title": "Lancement rapide",
+      "info": "Charger la dernière table utilisée"
+    }
+  },
+  "create_layout": {
+    "info": "Choisis la forme de table à utiliser",
+    "name": "Nom de la table",
+    "save": "Créer la table",
+    "data_corrupted": {
+      "summary": "Sauvegarde corrompue",
+      "detail": "La sauvegarde est corrompue. Remise à zéro de la sauvegarde pour enregistrer la nouvelle table ..."
+    },
+    "error_saving": {
+      "summary": "Erreur lors de la sauvegarde",
+      "detail": "Une erreur inattendue s'est produite lors de la sauvegarde !"
+    },
+    "success_saving": {
+      "summary": "Sauvegarde effectuée !",
+      "detail": "La nouvelle table a été correctement enregistrée."
+    },
+    "rectangle": {
+      "title": "Table rectangulaire",
+      "info": "Choisis cette forme si tu veux utiliser une table carrée ou rectangulaire",
+      "size": "Taille de la table:"
+    },
+    "circle": {
+      "title": "Table ronde",
+      "info": "Choisis cette forme si tu veux utiliser une table ronde",
+      "size": "Nombre maximum de joueurs:"
+    }
+  },
+  "load_layout": {
+    "empty": "Aucune table sauvegardée",
+    "load": "Charger",
+    "data_corrupted": {
+      "summary": "Erreur lors du chargement",
+      "detail": "Essaye de créer une nouvelle table pour retirer la sauvegarde corrompue."
+    }
+  },
+  "delete_layout": {
+    "message": "Veux tu supprimer la table appelée {name}?"
+  },
+  "game": {
+    "error_loading": {
+      "summary": "Erreur lors du chargement de la table",
+      "detail": "La table n'a pas été trouvée dans le stockage."
+    },
+    "select_players": "Choisis les joueurs actifs",
+    "select_dealer": "Choisis le dealer",
+    "select_blind": "Choisis la petite blind",
+    "insert_bet": "Insérer le montant de la mise",
+    "ended": "Partie terminée",
+    "bet_amount": "Montant de la mise",
+    "amount_to_call": "A besoin de {amount} pour suivre",
+    "actual_pot": "Pot: {amount}",
+    "check": "Check",
+    "fold": "Coucher"
+  },
+  "delete": "Supprimer",
+  "cancel": "Annuler",
+  "next": "Suivant"
+}
