@@ -97,8 +97,4 @@ const game = createGame();
   </div>
 </template>
 
-<style scoped>
-.grid-game {
-  display: grid;
-}
-</style>
+<style scoped></style>

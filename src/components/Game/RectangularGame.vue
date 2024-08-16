@@ -1,31 +1,42 @@
 <script setup lang="ts">
+import { onUnmounted, ref, computed } from "vue";
 import { Game } from "../../classes/Game";
 import Seat from "./Seat.vue";
 
 const { game } = defineProps<{
   game: Game;
 }>();
+
+let columns = 2 * (1 + game.layout.size.x);
+let rows = 2 * (1 + game.layout.size.y);
+
+let screenRatio = ref(window.innerHeight / window.innerWidth);
+function setScreenRatio() {
+  screenRatio.value = window.innerHeight / window.innerWidth;
+}
+window.addEventListener("resize", setScreenRatio);
+onUnmounted(() => window.removeEventListener("resize", setScreenRatio));
+
+const size = computed(() => {
+  return 90 / (screenRatio.value > rows / columns ? columns : rows);
+});
 </script>
 
 <template>
   <div
     class="grid-game"
     :style="{
-      gridTemplateColumns: `repeat(${2 * (1 + game.layout.size.x)},${
-        40 / (1 + Math.max(game.layout.size.x, game.layout.size.y))
-      }${
+      gridTemplateColumns: `repeat(${columns},${size}${
         game.layout.size.x == game.layout.size.y
           ? 'vmin'
-          : Math.max(game.layout.size.x, game.layout.size.y) == game.layout.size.x
+          : screenRatio > rows / columns
           ? 'vw'
           : 'vh'
       })`,
-      gridTemplateRows: `repeat(${2 * (1 + game.layout.size.y)},${
-        40 / (1 + Math.max(game.layout.size.x, game.layout.size.y))
-      }${
+      gridTemplateRows: `repeat(${rows},${size}${
         game.layout.size.x == game.layout.size.y
           ? 'vmin'
-          : Math.max(game.layout.size.x, game.layout.size.y) == game.layout.size.x
+          : screenRatio > rows / columns
           ? 'vw'
           : 'vh'
       })`,
@@ -81,4 +92,8 @@ const { game } = defineProps<{
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.grid-game {
+  display: grid;
+}
+</style>
